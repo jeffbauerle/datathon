@@ -129,6 +129,30 @@ if __name__ == '__main__':
 
     df.to_pickle('../data/new_features.pkl')
 
+#using masking to identify positive and negative tweets that mention only trump or biden
+
+    df_t = df[df['trump']==True]
+    df_ot = df_t[df_t['biden']==False]
+    df_otpos = df_ot[df_ot['vader_compound'] >= .05]
+    df_otneg = df_ot[df_ot['vader_compound'] <= -.05]
+
+    df_b = df[df['biden']==True]
+    df_ob = df_b[df_b['trump']==False]
+    df_obpos = df_ob[df_ob['vader_compound'] >= .05]
+    df_obneg = df_ob[df_ob['vader_compound'] <= -.05]
+
+    df_otpos.to_pickle('../data/trump_pos.pkl')
+    df_otneg.to_pickle('../data/trump_neg.pkl')
+    df_obpos.to_pickle('../data/biden_pos.pkl')
+    df_obneg.to_pickle('../data/biden_neg.pkl')
+
+
+
+
+
+
+
+
 
 
 
