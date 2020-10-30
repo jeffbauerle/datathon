@@ -69,8 +69,33 @@ We were operating under the assumption that a tweet which only mentioned Biden a
 
 Effectively, while the statistical differene remains valid, we can't infer that positive-sentiment tweets that mention Biden or Trump are necessarily pro-Biden – imagine, for instance, a tweet that read something like "I'm so very happy that Joe Biden is about to go to jail!"
 
-## NLP (Jeff)
+## NLP 
 
+Performed standard NLP pipeline:
+- lowercased words
+- removed punctuation
+- lemmatized words
+
+Topics found via LDA:
+
+Topic #0:
+will flotus tonight positive covid19 tested recovery wallace white immediately
+
+Topic #1:
+want time ballot year say tax new one donald amp
+
+Topic #2:
+thank will everyone negative happy report time jill covid tested
+
+Topic #3:
+white state america stand supremacist vote united last night say
+
+Topic #4:
+people covid american know mask amp will first hope got
+
+
+## pyLDAvis
+https://datathon-oct30.s3-us-west-2.amazonaws.com/ldavis_prepared_5.html#topic=0&lambda=1&term=
 
 ## Trump Twitter Archive
 
@@ -134,7 +159,8 @@ https://www.thetrumparchive.com/
 ### Vader Sentiment Analysis
 https://github.com/cjhutto/vaderSentiment
 
-
+### Topic Modeling in Python: Latent Dirichlet Allocation (LDA)
+https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0
 
 
 
