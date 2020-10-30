@@ -100,7 +100,7 @@ if __name__ == '__main__':
     ax.grid(True)
     plt.savefig('../images/weekly_mean_comp_sent.png')
 
-   fig, ax = plt.subplots(figsize=(20, 12))
+    fig, ax = plt.subplots(figsize=(20, 12))
     ax.scatter(weekly_df_sum.index, weekly_df_sum.favorites, c=weekly_df_mean.vader_comp, s=200)
     ax.set_xlabel('Date', fontsize=18)
     ax.set_ylabel('Favorites, Total', fontsize=18)
@@ -119,10 +119,10 @@ if __name__ == '__main__':
     fig, ax = plt.subplots(figsize=(20, 12))
     ax.scatter(weekly_df_mean.index, weekly_df_mean.favorites, c=weekly_df_mean.vader_comp, s=200)
     ax.set_xlabel('Date', fontsize=18)
-    ax.set_ylabel('Average Weekly Favorites', fontsize=18)
-    ax.set_title('My Trump Mood Board – Weekly Favorites, Mean', fontsize=25)
+    ax.set_ylabel('Average favorites per tweet', fontsize=18)
+    ax.set_title('My Trump Mood Board – Weekly Retweets, Mean', fontsize=25)
     ax.grid(True)
-    plt.savefig('../images/weekly_favorites_mean.png')
+    plt.savefig('../images/xx_weekly_favorites_mean.png')
 
     plt.rc('font', size=12)
     fig, ax = plt.subplots(figsize=(20, 12))
