@@ -78,19 +78,19 @@ Performed standard NLP pipeline:
 
 Topics found via LDA:
 
-Topic #0:
+Topic #1 (covid personally affecting Trump): 
 will flotus tonight positive covid19 tested recovery wallace white immediately
 
-Topic #1:
+Topic #2 (taxes):
 want time ballot year say tax new one donald amp
 
-Topic #2:
+Topic #3 (biden):
 thank will everyone negative happy report time jill covid tested
 
-Topic #3:
+Topic #4 (white supremacy):
 white state america stand supremacist vote united last night say
 
-Topic #4:
+Topic #5 (covid affecting Americans):
 people covid american know mask amp will first hope got
 
 
