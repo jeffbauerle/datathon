@@ -104,10 +104,7 @@ def plot_10_most_common_words(count_data, count_vectorizer):
 if __name__ == "__main__":
 
     stopwords = set(STOPWORDS)
-    stopwords.update(["im", "nike", "check", "out", "rt", "air", "know", "hey",
-                     "httpstcoyyv8xsbp4x", "good", "share", "keep", "new",
-                      "shoe", "im  loving", "item", "sneaker", "let", "see",
-                      "got", "weight", "jordan", "loving  on", "on"])
+    stopwords.update(["trump", "biden", "realdonaldtrump", "rt", "joe", "joebiden", "president", "debate", "wa", "ha"])
 
     plt.rcParams.update({'font.size': 16})
     punc = punctuation
